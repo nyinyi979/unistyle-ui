@@ -15,7 +15,6 @@ const simple_git = require('simple-git').simpleGit({
 const argv = require('yargs/yargs')(process.argv.splice(2))
 
 .epilogue(`Available comp_name(case insensitive)
-(Basic components will be installed no matter what:)):
 Basic: ${clc.blue.bold('Button, TextInput, P, Link')}
 UI Component: ${clc.blue.bold('accordion','badge','button','calendar','checkbox','dialog','drawer','input','link',
 'select','skeleton','slider','switch','tabs','text','toast','toggle','all')}
@@ -128,5 +127,5 @@ If the installation of each component is not working, you have probably deleted 
 
 if(argv.path) {
     console.log("Current path is ", clc.blue(path_));
-    console.log("Change it from",path.join(__dirname,"/node_modules/unistyles_components_cli/index.js"))
+    console.log("Change it from",path.join(__dirname,'/index.js'))
 }
