@@ -13,9 +13,10 @@
   "description": "A cli tool for unistyles-ui-kit",
   
   "scripts": {
-    "help": "node index.js --help"
+    "help": "node index.js --help",
+    "publish": "npm publish --access public"
   },
-  "version": "1.1",
+  "version": "0.1.0",
   "dependencies": {
     "cli-color": "^2.0.3",
     "simple-git": "^3.22.0",
