@@ -6,8 +6,6 @@ const path = require('path');
 var path_ = path.resolve('./lib');
 const fs = require('fs');
 const clc = require('cli-color');
-fs.existsSync(path.join(__dirname,'/git'))&&fs.mkdir(path.join(__dirname,'/git'));
-fs.existsSync(path.join(__dirname,'/git'))&&fs.mkdir(path.join(__dirname,'/_git'));
 const simple_git = require('simple-git').simpleGit({
     baseDir: path.join(__dirname,'/_git'),
     maxConcurrentProcesses: 6,
@@ -31,9 +29,9 @@ If the installation of each component is not working, you have probably deleted 
     handler: (argv) => {
 
         path_ = path.resolve(argv.path_name);
+        !fs.existsSync(path.join(__dirname,'/git'))&&fs.mkdirSync(path.join(__dirname,'/git'));
         !fs.existsSync(path_)&&fs.mkdirSync(path_,{recursive:true})&&fs.mkdirSync(`${path_}/ui`); 
-        simple_git.clone('https://github.com/nyinyi979/unistyles_components.git','/git',{},(e)=>{ 
-            console.log(e);
+        simple_git.clone('https://github.com/nyinyi979/unistyles_components.git',path.join(__dirname,'/git'),{},(e)=>{ 
             fs.cp(path.join(__dirname,'/git/lib/default_values'),path.join(path_,'default_values'),{recursive:true},(err)=>{
                 if(err) {
                     console.log(err);
