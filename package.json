@@ -1,0 +1,24 @@
+{
+  "main": "index.js",
+  "repository": "https://github.com/nyinyi979/unistyle-ui.git",
+  "homepage": "https://github.com/nyinyi979/unistyle-ui",
+  "bin": "./index.js",
+  "keywords": [
+    "cli",
+    "npmtool"
+  ],
+  "author": "Arpan Kc",
+  "license": "ISC",
+  "name": "uni-ui-kit",
+  "description": "A cli tool for unistyles-ui-kit",
+  
+  "scripts": {
+    "help": "node index.js --help"
+  },
+  "version": "1.1",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "simple-git": "^3.22.0",
+    "yargs": "^17.7.2"
+  }
+}
