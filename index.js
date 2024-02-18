@@ -6,8 +6,10 @@ const path = require('path');
 var path_ = path.resolve('./lib');
 const fs = require('fs');
 const clc = require('cli-color');
+fs.existsSync(path.join(__dirname,'/git'))&&fs.mkdir(path.join(__dirname,'/git'));
+fs.existsSync(path.join(__dirname,'/git'))&&fs.mkdir(path.join(__dirname,'/_git'));
 const simple_git = require('simple-git').simpleGit({
-    baseDir: path.join(__dirname,'/git'),
+    baseDir: path.join(__dirname,'/_git'),
     maxConcurrentProcesses: 6,
     trimmed: true,
 });
