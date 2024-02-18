@@ -11,12 +11,11 @@
   "license": "ISC",
   "name": "uni-ui-kit",
   "description": "A cli tool for unistyles-ui-kit",
-  
   "scripts": {
     "help": "node index.js --help",
     "publish": "npm publish --access public"
   },
-  "version": "0.1.0",
+  "version": "0.2.2",
   "dependencies": {
     "cli-color": "^2.0.3",
     "simple-git": "^3.22.0",
