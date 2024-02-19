@@ -69,14 +69,14 @@ If the installation of each component is not working, you have probably deleted 
             const ui_components = new Set(['accordion','badge','button','calendar','checkbox','dialog','drawer','input','link',
                 'select','skeleton','slider','switch','tabs','text','toast','toggle']);
             if(argv.comp_name==='all') {
-                fs.readdir(path.join(`./${path_}/ui`),(e,f)=>{
+                fs.readdir(path.join(path_,'ui'),(e,f)=>{
                     if(e) {
                         console.log(e);
                         return;
                     }
                     if(f.length === 0){
                         console.log("Found zero component installed, Installing all...");
-                        fs.cp(path.join(__dirname,'/git/ui'),path.join(path_,'ui'),{recursive:true},(e)=>{
+                        fs.cp(path.join(__dirname,'/git/lib/ui'),path.join(path_,'ui'),{recursive:true},(e)=>{
                             if(e){
                                 console.log(e);
                                 return;

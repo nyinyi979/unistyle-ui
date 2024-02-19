@@ -7,7 +7,7 @@
     "cli",
     "npmtool"
   ],
-  "author": "Arpan Kc",
+  "author": "Zett",
   "license": "ISC",
   "name": "uni-ui-kit",
   "description": "A cli tool for unistyles-ui-kit",
@@ -15,7 +15,7 @@
     "help": "node index.js --help",
     "publish": "npm publish --access public"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "dependencies": {
     "cli-color": "^2.0.3",
     "simple-git": "^3.22.0",
