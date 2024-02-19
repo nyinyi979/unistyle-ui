@@ -88,7 +88,7 @@ If the installation of each component is not working, you have probably deleted 
                         console.log(`Found ${f.map((v)=>`${clc.blue(v)},
 `)}Installing rest of the components`)
                         ui_components.forEach((c)=>{
-                            fs.copyFile(path.join(__dirname,`/git/lib/ui/${c}.tsx`),path.join(`./${path_}/ui/${c}.tsx`),fs.constants.COPYFILE_EXCL,(e)=>{
+                            fs.copyFile(path.join(__dirname,`/git/lib/ui/${c}.tsx`),path.join(path_,`/ui/${c}.tsx`),fs.constants.COPYFILE_EXCL,(e)=>{
                                 if(e){
                                     if(e.code==='EEXIST') return;
                                     console.log(e);
@@ -104,7 +104,7 @@ If the installation of each component is not working, you have probably deleted 
 
             if(ui_components.has(argv.comp_name.toLowerCase())){
                 //node index install all
-                fs.copyFile(path.join(__dirname,`/git/lib/ui/${argv.comp_name}.tsx`),path.join(`./${path_}/ui/${argv.comp_name}.tsx`),(err)=>{
+                fs.copyFile(path.join(__dirname,`/git/lib/ui/${argv.comp_name}.tsx`),path.join(path_,`/ui/${argv.comp_name}.tsx`),(err)=>{
                     if(err){
                         console.log(err);
                         return;
