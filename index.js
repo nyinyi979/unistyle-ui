@@ -16,7 +16,7 @@ const argv = require('yargs/yargs')(process.argv.splice(2))
 
 .epilogue(`Available comp_name(case insensitive)
 Basic: ${clc.blue.bold('Button, TextInput, P, Link')}
-UI Component: ${clc.blue.bold('accordion','badge','button','calendar','checkbox','dialog','drawer','input','link',
+UI Component: ${clc.blue.bold('accordion','badge','button','calendar','checkbox','dialog','drawer','input','link','popover',
 'select','skeleton','slider','switch','tabs','text','toast','toggle','all')}
 If the installation of each component is not working, you have probably deleted './path/ui' directory from your path`)
 
@@ -66,7 +66,7 @@ If the installation of each component is not working, you have probably deleted 
     handler: (argv) => {
         if(argv.comp_name === '') console.log(clc.red("Please provide a component name"));
         else {
-            const ui_components = new Set(['accordion','badge','button','calendar','checkbox','dialog','drawer','input','link',
+            const ui_components = new Set(['accordion','badge','button','calendar','checkbox','dialog','drawer','input','link','popover',
                 'select','skeleton','slider','switch','tabs','text','toast','toggle']);
             if(argv.comp_name==='all') {
                 fs.readdir(path.join(path_,'ui'),(e,f)=>{
