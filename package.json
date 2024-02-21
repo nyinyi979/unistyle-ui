@@ -7,15 +7,18 @@
     "cli",
     "npmtool"
   ],
+  "publishConfig": {
+    "registry": "https://github.com/nyinyi979/unistyle-ui.git"
+  },
   "author": "Zett",
   "license": "ISC",
-  "name": "uni-ui-kit",
+  "name": "@nyinyi979/uni-ui-kit",
   "description": "A cli tool for unistyles-ui-kit",
   "scripts": {
     "help": "node index.js --help",
     "publish": "npm publish --access public"
   },
-  "version": "0.3.2",
+  "version": "0.3.3",
   "dependencies": {
     "cli-color": "^2.0.3",
     "simple-git": "^3.22.0",
