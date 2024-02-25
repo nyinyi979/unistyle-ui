@@ -1,5 +1,5 @@
 # Unistyles UI Kit Cli
-- npm install unistyles-ui
+- npm install uni-ui-kit
 - Now you can start using the cli.
 
 ## Configuring the path

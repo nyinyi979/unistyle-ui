@@ -18,7 +18,7 @@
     "help": "node index.js --help",
     "publish": "npm publish --access public"
   },
-  "version": "0.3.3",
+  "version": "0.3.4",
   "dependencies": {
     "cli-color": "^2.0.3",
     "simple-git": "^3.22.0",
