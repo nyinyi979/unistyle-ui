@@ -1,4 +1,4 @@
-# Unistyles UI Kit Cli tool
+# Unistyles UI Kit Cli
 - npm install unistyles-ui
 - Now you can start using the cli.
 
@@ -22,4 +22,10 @@
 - npx uni-ui-kit --help
 - npx uni-ui-kit --path
 
+## Want to install the latest version of the components?
+1. Right now there is no command for that. You will have update the cli tool. delete ./lib folder.
+2. npx uni-ui-kit init
+3. npx uni-ui-kit install all
+4. npx uni-ui-kit uninstall
+   
 UNISTYLE UI LIBRARY - https://github.com/nyinyi979/unistyles_components
